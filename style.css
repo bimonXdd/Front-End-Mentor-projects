@@ -1,0 +1,169 @@
+*{
+  padding: 0;
+  margin:0;
+}
+body{
+  background-image:url(images/bg-intro-desktop.png);
+  background-repeat: no-repeat;
+  background-color:hsl(0, 100%, 74%);
+}
+.everything{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:60px
+}
+.left-side{
+  align-items: center;
+  color:white;
+  margin: 0 50px 0 40px;
+
+}
+.left-side h1{
+  width: 450px;
+  font-size: 3rem;
+  padding-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  line-height: 55px;
+}
+.left-side p{
+  width: 500px;
+  font-family: 'Poppins', sans-serif;
+}
+.right-side{
+
+}
+.purple-slogan p b{
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+
+}
+#purpleButton{
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 5px;
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color:rgb(199, 95, 96);
+  padding:15px 100px 15px 100px;
+  margin:20px 0 20px 0;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+
+}
+.white-block{
+  background-color: white;
+  padding:40px 0 40px 0;
+  border-radius: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 7.5px;
+  border-bottom-color:rgb(194, 91, 92);
+  display: flex;
+  flex-direction: column;
+
+}
+.white-block input{
+  border-color:rgba(0,0,0,0.2);
+  border-width: 2px;
+  border-style:solid;
+  border-radius: 5px;
+  padding:15px 30px 15px 30px;
+  margin:0px 30px 0px 30px;
+  font-family: 'Poppins', sans-serif;
+
+  background-repeat: no-repeat;
+  background-position: right 5% bottom 50%;
+
+
+}
+.white-block .green-button{
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(154, 59%, 51%);
+  padding:15px 20px 15px 20px;
+  margin:0px 30px 10px 30px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight:600;
+  font-size: 1rem;
+}
+.white-block .terms-of-service button{
+  background-color: white;
+  border: none;
+  color:hsl(0, 100%, 74%);
+  padding-left: 5px;
+  font-size: 0.75rem;
+  font-family: 'Poppins', sans-serif;
+
+}
+.white-block .terms-of-service{
+  padding: 0px 20px 0px 60px;
+  font-size: 0.75rem;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(0, 0, 0, 0.25);
+}
+.Error{
+  color: white;
+  text-align:right;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin:0 30px 20px 30px ;
+}
+
+@media screen and (max-width:400px) {
+  body{
+      background-image:url(images/bg-intro-mobile.png);
+  }
+  .everything{
+    flex-direction: column;
+  }
+  .white-block{
+    margin:0 30px 40px 30px ;
+    padding:10px 0 0 0;
+  }
+  .white-block input{
+    padding: 15px 10px 15px 10px;
+    margin: 10px 20px 0 20px;
+  }
+  .left-side{
+    margin:0 0 20px 0;
+
+  }
+  .left-side h1{
+    font-size: 1.5rem;
+    text-align: center;
+    width: 310px;
+    line-height: 35px;
+    margin: 0 0 0 0;
+    padding:35px 0 25px 10px;
+  }
+  .left-side p {
+    width:325px ;
+    padding:0;
+    margin:0 0 20px 0;
+    text-align: center;
+
+  }
+  #purpleButton{
+    margin:10px 30px 30px 30px;
+    padding: 15px 70px 15px 70px;
+  }
+  .Error{
+    margin:0 30px 0px 30px;
+    font-size: 0.5rem;
+  }
+  .white-block .green-button{
+    margin:5px 10px 5px 10px;
+  }
+  .white-block .terms-of-service{
+    padding: 0px 20px 0 20px;
+    text-align: center;
+    margin: 0 0 25px 0;
+    flex-direction: column;
+  }
+
+
+}
